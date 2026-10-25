@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the article below."
+title: "FidelityShapley: provenance-aware, fidelity-anchored valuation of sensor data for digital-twin synchronisation (code and experimental evidence)"
+version: 1.0.0
+date-released: 2026-10-25
+license: MIT
+authors:
+  - family-names: Alam
+    given-names: Gulzar
+    email: g.alam@ulster.ac.uk
+    affiliation: "Artificial Intelligence Collaboration Centre (AICC), Ulster University, Derry~Londonderry, UK"
+keywords: [digital twin, data valuation, Shapley value, sensor selection, data quality, data provenance]
+preferred-citation:
+  type: article
+  title: "FidelityShapley: Provenance-Aware, Fidelity-Anchored Valuation of Sensor Data for Digital-Twin Synchronisation"
+  authors:
+    - family-names: Alam
+      given-names: Gulzar
+  journal: "Digital Twin"
+  publisher:
+    name: "Taylor & Francis"
+  status: submitted
+  year: 2026

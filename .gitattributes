@@ -1,0 +1,6 @@
+*.ipynb linguist-documentation
+results/** linguist-generated
+*.pt binary
+*.png binary
+*.pdf binary
+*.docx binary

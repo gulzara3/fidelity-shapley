@@ -1,0 +1,57 @@
+{
+  "0": {
+    "Temperature": {
+      "group_value": 0.145773024218423,
+      "sum_members": 0.18861944434188666,
+      "members": [
+        "Temperature",
+        "Thermocouple"
+      ],
+      "group_rho": 0.8342234235544871
+    }
+  },
+  "1": {
+    "Temperature": {
+      "group_value": 0.16030070568834037,
+      "sum_members": 0.20361349923270072,
+      "members": [
+        "Temperature",
+        "Thermocouple"
+      ],
+      "group_rho": 0.8342234235544871
+    }
+  },
+  "2": {
+    "Temperature": {
+      "group_value": 0.13315190644491284,
+      "sum_members": 0.1648939747185934,
+      "members": [
+        "Temperature",
+        "Thermocouple"
+      ],
+      "group_rho": 0.8342234235544871
+    }
+  },
+  "3": {
+    "Temperature": {
+      "group_value": 0.13824499178500402,
+      "sum_members": 0.17142629935627893,
+      "members": [
+        "Temperature",
+        "Thermocouple"
+      ],
+      "group_rho": 0.8342234235544871
+    }
+  },
+  "4": {
+    "Temperature": {
+      "group_value": 0.1396907724085308,
+      "sum_members": 0.17984908152194248,
+      "members": [
+        "Temperature",
+        "Thermocouple"
+      ],
+      "group_rho": 0.8342234235544871
+    }
+  }
+}

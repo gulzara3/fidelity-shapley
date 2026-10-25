@@ -1,0 +1,59 @@
+# Configuration of the published run (FidelityShapley, Digital Twin, 2026).
+# Every value equals the default in src/fidelity_shapley/config.py; it is listed
+# explicitly so the experiment is fully specified by this file.
+exp_dir: outputs/fidelity_shapley_v1
+global_seed: 20260808
+model_seeds: [0, 1, 2, 3, 4]
+device: auto            # auto | cuda | cpu   (paper run: NVIDIA L4, Google Colab)
+amp_dtype: bfloat16
+deterministic: true
+
+# provenance pipeline
+clip_q_low: 0.001
+clip_q_high: 0.999
+redundancy_tau: 0.9
+constant_std_tol: 1.0e-6
+
+# fusion / windowing
+window_skab: 32
+window_cmapss: 30
+rul_cap: 125.0
+skab_train_frac: 0.8
+
+# mask-trained surrogate (single-layer GRU, mask concatenated to input)
+hidden: 64
+steps: 1200
+batch_size: 256
+keep_p: 0.7             # masking probability p = 0.3
+lr: 0.002
+weight_decay: 0.0001
+warmup_steps: 50
+eval_batch: 4096
+
+# Shapley estimation
+mc_perm_pairs: 100
+trace_tail: 20
+
+# defect injection (H4)
+defects:
+  noise: [0.25, 0.5, 1.0]
+  drift: [1.0, 2.0, 4.0]
+  stuck_at: [0.1, 0.3, 0.5]
+  staleness: [2, 5, 10]
+
+# retrain-per-coalition validation
+spot_n_seeds: 2
+spot_steps: 600
+spot_seed_offset: 1000
+spot_random_sizes: [2, 4, 6]
+
+# closed-loop bandwidth (H3)
+ks_skab: [1, 2, 3, 4, 5, 6, 7, 8]
+ks_cmapss: [2, 4, 6, 8, 12, 16, 21]
+lowband_skab: [1, 2, 3, 4]
+lowband_cmapss: [2, 4, 6, 8, 12]
+band_tol: 0.05
+cmapss_rank_windows: 2000
+
+# detection (limitation)
+cal_frac: 0.15

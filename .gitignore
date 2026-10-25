@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.deepeval/
+.ipynb_checkpoints/
+
+# Experiment outputs (regenerable). Archived evidence lives in results/.
+outputs/
+*.parquet
+!results/**
+
+# OS / editors
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/

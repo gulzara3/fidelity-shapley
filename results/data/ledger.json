@@ -1,0 +1,109 @@
+{
+  "ledger": {
+    "skab": {
+      "Accelerometer1RMS": {
+        "nan_filled": 0,
+        "clipped": 34153
+      },
+      "Accelerometer2RMS": {
+        "nan_filled": 0,
+        "clipped": 33029
+      },
+      "Current": {
+        "nan_filled": 0,
+        "clipped": 9448
+      },
+      "Pressure": {
+        "nan_filled": 0,
+        "clipped": 66
+      },
+      "Temperature": {
+        "nan_filled": 0,
+        "clipped": 33282
+      },
+      "Thermocouple": {
+        "nan_filled": 0,
+        "clipped": 32858
+      },
+      "Voltage": {
+        "nan_filled": 0,
+        "clipped": 794
+      },
+      "VolumeFlowRateRMS": {
+        "nan_filled": 0,
+        "clipped": 28563
+      }
+    },
+    "cmapss": {
+      "s1": {
+        "degenerate_constant": true
+      },
+      "s2": {
+        "degenerate_constant": false
+      },
+      "s3": {
+        "degenerate_constant": false
+      },
+      "s4": {
+        "degenerate_constant": false
+      },
+      "s5": {
+        "degenerate_constant": true
+      },
+      "s6": {
+        "degenerate_constant": false
+      },
+      "s7": {
+        "degenerate_constant": false
+      },
+      "s8": {
+        "degenerate_constant": false
+      },
+      "s9": {
+        "degenerate_constant": false
+      },
+      "s10": {
+        "degenerate_constant": true
+      },
+      "s11": {
+        "degenerate_constant": false
+      },
+      "s12": {
+        "degenerate_constant": false
+      },
+      "s13": {
+        "degenerate_constant": false
+      },
+      "s14": {
+        "degenerate_constant": false
+      },
+      "s15": {
+        "degenerate_constant": false
+      },
+      "s16": {
+        "degenerate_constant": true
+      },
+      "s17": {
+        "degenerate_constant": false
+      },
+      "s18": {
+        "degenerate_constant": true
+      },
+      "s19": {
+        "degenerate_constant": true
+      },
+      "s20": {
+        "degenerate_constant": false
+      },
+      "s21": {
+        "degenerate_constant": false
+      }
+    }
+  },
+  "redundant_groups": {
+    "Temperature": [
+      "Temperature",
+      "Thermocouple"
+    ]
+  }
+}

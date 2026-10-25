@@ -1,0 +1,22 @@
+{
+  "skab.parquet": {
+    "sha256": "219ab6f9de48bfda63591665ab5dd38f32817688ea8aba03374488b2b469f105",
+    "bytes": 2261270,
+    "rows": 46806,
+    "runs": 35,
+    "anomaly_free_rows": 9405
+  },
+  "cmapss_fd001.parquet": {
+    "sha256": "d02fa44b6bfbb79a694cf05359207509ea1400c822a8b06212e8e65300912811",
+    "bytes": 778159,
+    "rows": 33727,
+    "train_rows": 20631,
+    "test_rows": 13096,
+    "engines_test": 100
+  },
+  "rul_fd001.npy": {
+    "sha256": "2e941c740fee91a2b6626314884982f6f04dd3d0b9fe8a843e12abc582962833",
+    "bytes": 928
+  },
+  "_note": "SHA-256 of the Parquet caches produced by the paper run (pandas/pyarrow on Google Colab). Re-downloads may differ byte-wise across library versions; the content fingerprints below are version-independent."
+}

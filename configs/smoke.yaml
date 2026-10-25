@@ -1,0 +1,10 @@
+# Fast CPU smoke test (a few minutes): one seed, short training, few MC pairs.
+# Results are NOT comparable to the paper; use it to check the installation.
+exp_dir: outputs/smoke
+model_seeds: [0]
+device: auto
+amp_dtype: none
+steps: 150
+spot_steps: 60
+spot_n_seeds: 1
+mc_perm_pairs: 5

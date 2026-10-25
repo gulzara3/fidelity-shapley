@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fidelity-shapley"
+version = "1.0.0"
+description = "Provenance-aware, fidelity-anchored Shapley valuation of sensor data for digital-twin synchronisation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gulzar Alam", email = "g.alam@ulster.ac.uk" }]
+keywords = ["digital twin", "data valuation", "Shapley value", "sensor selection",
+            "data quality", "data provenance", "prognostics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "pyarrow>=12",
+  "scipy>=1.11",
+  "scikit-learn>=1.3",
+  "torch>=2.1",
+  "pyyaml>=6.0",
+  "matplotlib>=3.7",
+  "seaborn>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+fidelity-shapley = "fidelity_shapley.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E731", "B023", "E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/fidelity_shapley/reporting/paper_figures.py" = ["E", "W", "B", "UP", "I"]

@@ -1,0 +1,7 @@
+{
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "python.analysis.extraPaths": ["src"],
+  "editor.rulers": [110],
+  "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" }
+}
