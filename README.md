@@ -143,5 +143,5 @@ Code: MIT (see `LICENSE`). Datasets remain under their original terms.
 
 ## Contact
 
-Gulzar Alam — Artificial Intelligence Collaboration Centre (AICC), Ulster University ·
+Gulzar Alam, Ulster University·
 g.alam@ulster.ac.uk
